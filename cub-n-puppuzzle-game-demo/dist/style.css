@@ -34,7 +34,7 @@ canvas {
 .instruction {
   padding: 0 10px;
   text-align: center;
-  position: absolute;
+  position: relative;
   width: 100%;
   padding-bottom: 40px;
 }
@@ -68,7 +68,7 @@ canvas {
 }
 
 .next-level-button {
-  position: absolute;
+  position: relative;
   left: 50%;
   -webkit-transform: translateX(-110px) scale(0.5);
   transform: translateX(-110px) scale(0.5);
