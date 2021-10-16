@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  background-blend-mode: hard-light;
   height: 100vh;
   overflow: hidden;
 
