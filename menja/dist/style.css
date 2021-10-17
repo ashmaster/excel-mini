@@ -1,11 +1,6 @@
 body {
   margin: 0;
-  background-color: rgb(16, 10, 22);
-  background-image: url("./excel.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-blend-mode: hard-light;
+  background-color: #262626;
   height: 100vh;
   overflow: hidden;
 
