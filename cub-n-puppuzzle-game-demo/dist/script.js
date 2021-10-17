@@ -1334,6 +1334,9 @@ levelList.addEventListener( 'click', function( event ) {
   let current_lid=localStorage.getItem('currentLevel') || levels[0];
   if(levels.indexOf(id)<=completedLevels.length)
   loadLevel( id );
+  else{
+    alert("Please complete the previous levels :)")
+  }
 });
 
 function getParent( elem, selector ) {
@@ -1706,7 +1709,7 @@ function renderRotateHandle() {
   ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
   ctx.lineWidth = gridSize * 0.5;
-  var color = '#EEE';
+  var color = "rgb(238,238,238,0.5)";
   ctx.strokeStyle = color;
   ctx.fillStyle = color;
 
