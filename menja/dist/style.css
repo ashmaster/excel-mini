@@ -61,6 +61,11 @@ body {
   background-color: #fff;
 }
 
+#mascot {
+  width: 100px;
+  position: relative;
+  top: -40px;
+}
 .pause-btn > div::after {
   right: 0;
 }
