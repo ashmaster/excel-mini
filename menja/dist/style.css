@@ -66,6 +66,13 @@ body {
   position: relative;
   top: -40px;
 }
+
+#excel {
+  width: 200px;
+  position: relative;
+  top: -40px;
+}
+
 .pause-btn > div::after {
   right: 0;
 }
