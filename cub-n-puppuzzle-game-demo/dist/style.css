@@ -8,6 +8,8 @@ body {
   font-weight: 500;
   font-size: 20px;
   color: #555;
+  height:100%;
+  background-image: url("logo2.png");
 }
 
 canvas {
@@ -15,6 +17,8 @@ canvas {
   display: block;
   position: absolute;
   max-width: 100%;
+  top:0;
+  bottom: 0;
   left: 0;
   top: 0;
 }
@@ -34,9 +38,10 @@ canvas {
 .instruction {
   padding: 0 10px;
   text-align: center;
-  position: absolute;
+  position: relative;
   width: 100%;
   padding-bottom: 40px;
+  color:rgb(232, 236, 238)
 }
 
 .button {
@@ -45,15 +50,15 @@ canvas {
   font-size: 20px;
   padding: 5px 15px;
   margin: 10px;
-  background: #BBB;
-  color: white;
+  background: rgb(12, 12, 12);
+  color: rgb(184, 23, 130);;
   border-radius: 5px;
   border: none;
   cursor: pointer;
 }
 
 .button:hover {
-  background: #09F;
+  background: rgb(226, 229, 231);
 }
 
 .top-bar {
@@ -68,12 +73,13 @@ canvas {
 }
 
 .next-level-button {
-  position: absolute;
+  position: relative;
   left: 50%;
   -webkit-transform: translateX(-110px) scale(0.5);
   transform: translateX(-110px) scale(0.5);
   opacity: 0;
-  background: #09F;
+  color: rgb(226, 230, 233);
+  background:rgb(184, 23, 130, 0.9);
   width: 200px;
   height: 80px;
   pointer-events: none;
@@ -82,7 +88,7 @@ canvas {
 }
 
 .next-level-button:hover {
-  background: #2BF;
+  background: rgb(184, 23, 130, 1);
 }
 
 .next-level-button.is-open {
@@ -97,7 +103,7 @@ canvas {
 
 .level-list {
   position: absolute;
-  background: #EEE;
+  background: rgb(209, 201, 201,0.6);
   width: 100%;
   min-height: 100%;
   left: 0;
@@ -127,13 +133,13 @@ canvas {
 }
 
 .level-list__item:hover {
-  color: #09F;
+  color: rgb(184, 23, 130);
   cursor: pointer;
-  background: white;
+  background: #DDD;
 }
 
 .level-list__item.is-playing {
-  background: #09F;
+  background: rgb(184, 23, 130);
   color: white;
 }
 
