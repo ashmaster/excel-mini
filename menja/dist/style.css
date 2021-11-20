@@ -260,14 +260,13 @@ a {
 
 /* Only enable hover state on large screens */
 @media (min-width: 1025px) {
+  button:hover {
+    opacity: 1;
+  }
 
-	button:hover {
-		opacity: 1;
-	}
-
-	button:hover::before {
-		transform: scale(1, 1);
-		opacity: 1;
-	}
+  button:hover::before {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
 
 }
