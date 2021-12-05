@@ -3,6 +3,11 @@ const app = express();
 const path = require('path');
 const router = express.Router();
 
+router.get('/',function(req,res){
+  res.sendFile(path.join(__dirname+'/games/index.html'));
+  //__dirname : It will resolve to your project folder.
+});
+
 router.get('/cjump',function(req,res){
   res.sendFile(path.join(__dirname+'/games/cjump/dist/index.html'));
   //__dirname : It will resolve to your project folder.
