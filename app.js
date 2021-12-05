@@ -22,6 +22,6 @@ router.get('/tower',function(req,res){
 //add the router
 app.use('/', router);
 app.use(express.static('games'));
-app.listen(process.env.port || 2000);
+app.listen(process.env.PORT || 2000);
 
 console.log('Running at Port 3000');
