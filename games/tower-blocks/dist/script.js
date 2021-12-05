@@ -16,10 +16,10 @@ class Stage {
         // renderer
         this.renderer = new THREE.WebGLRenderer({
             antialias: true,
-            alpha: true
+            alpha: false
         });
         this.renderer.setSize(window.innerWidth, window.innerHeight);
-        this.renderer.setClearColor('#D0CBC7', 0);
+        this.renderer.setClearColor('#D0CBC7', 1);
         this.container.appendChild(this.renderer.domElement);
         // scene
         this.scene = new THREE.Scene();
