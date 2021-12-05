@@ -29,4 +29,4 @@ app.use('/', router);
 app.use(express.static('games'));
 app.listen(process.env.PORT || 2000);
 
-console.log('Running at Port 3000');
+console.log('Running at Port 2000');
