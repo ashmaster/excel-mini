@@ -695,9 +695,9 @@ cub.render = function( ctx, mazeCenter, gridSize, angle, isHovered ) {
     ctx.beginPath();
    // ctx.arc( x, y, radius, 0, Math.PI * 2 );
    
-    base_image.src = 'logo.jpeg';
+    base_image.src = 'cub-n-puppuzzle-game-demo/dist/logo.png';
   
-      ctx.drawImage(base_image, x, y, 2* radius, 2* radius);
+      ctx.drawImage(base_image, x-5, y-10, 2.1* radius, 2.4* radius);
     
     ctx.fill();
     ctx.closePath();
@@ -713,7 +713,7 @@ cub.render = function( ctx, mazeCenter, gridSize, angle, isHovered ) {
   ctx.fillStyle = 'hsla(330, 100%, 40%, 1)';
   var scale = isHovered ? 1.15 : 1;
   ctx.scale( scale, scale );
- circle(  gridSize * -0.60, gridSize * -0.60, gridSize * 0.6 );
+ circle(  gridSize * -0.60, gridSize * -0.60, gridSize * 0.65 );
   //circle( gridSize * -0.45, gridSize * -0.35, gridSize * 0.3 );
   //circle( gridSize * 0.45, gridSize * -0.35, gridSize * 0.3 );
 
