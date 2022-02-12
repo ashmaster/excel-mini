@@ -1448,14 +1448,6 @@ function setGameMode(mode) {
 	state.game.mode = mode;
 }
 
-function resetGame() {
-	resetAllTargets();
-	state.game.time = 0;
-	resetAllCooldowns();
-	setScore(0);
-	setCubeCount(0);
-	spawnTime = getSpawnDelay();
-}
 
 function pauseGame() {
 	isInGame() && setActiveMenu(MENU_PAUSE);
@@ -1848,6 +1840,16 @@ function tick(width, height, simTime, simSpeed, lag) {
 
 	PERF_END('tick');
 }
+
+function resetGame() {
+	resetAllTargets();
+	state.game.time = 0;
+	resetAllCooldowns();
+	setScore(0);
+	setCubeCount(0);
+	spawnTime = getSpawnDelay();
+}
+
 
 
 
