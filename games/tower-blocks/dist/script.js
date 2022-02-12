@@ -287,7 +287,10 @@ class Game {
             this.instructions.classList.add('hide');
     }
     endGame() {
+        window.parent.postMessage(`Score${this.blocks.length -2}`, '*')
         this.updateState(this.STATES.ENDED);
+        
+        
     }
     tick() {
         this.blocks[this.blocks.length - 1].tick();

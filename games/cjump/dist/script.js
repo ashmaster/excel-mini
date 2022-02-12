@@ -158,7 +158,8 @@ class Game {
     $('.start-game, .stop-game').css('display', 'none');
     $('#sticks, .scene .ball-holder, #score').html('');
     TweenMax.killAll();
-
+    
+    window.parent.postMessage(`Score${this.score}`, '*')
     this.showResult();
   }
 

@@ -1310,12 +1310,8 @@ function renderMenus() {
 			showMenu(menuPauseNode);
 			break;
 		case MENU_SCORE:
+			window.parent.postMessage(`Score${state.game.score}`, '*')
 			finalScoreLblNode.textContent = formatNumber(state.game.score);
-			if (isNewHighScore()) {
-				highScoreLblNode.textContent = 'New High Score!';
-			} else {
-				highScoreLblNode.textContent = `High Score: ${formatNumber(getHighScore())}`;
-			}
 			showMenu(menuScoreNode);
 			break;
 	}

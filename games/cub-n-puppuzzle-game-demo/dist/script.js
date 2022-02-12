@@ -1739,6 +1739,7 @@ completedLevels.forEach( function( id ) {
 });
 
 function completeLevel() {
+  window.parent.postMessage(`Score${completedLevels.length + 1}`, '*')
   var cubPosition = getCubPosition();
   winAnim = new WinAnimation( cubPosition.x, cubPosition.y );
   levelList.querySelector('[data-id="' + maze.id + '"]').classList.add('did-complete');

@@ -89,6 +89,7 @@ class Game {
   * Display score
    */
   showResult() {
+    
     let score = this.score;
     $('.stop-game').css('display', 'flex');
     $('.stop-game .final-score').text(score + '!');
